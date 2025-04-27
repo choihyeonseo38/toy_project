@@ -1,16 +1,3 @@
-// 로그인 버튼 클릭 시
-document.getElementById('login-btn').addEventListener('click', function () {
-  const id = document.getElementById('username').value;
-  const pw = document.getElementById('password').value;
-
-  if (id && pw) {
-    localStorage.setItem('username', id);
-    window.location.href = 'main.html';
-  } else {
-    alert('아이디와 비밀번호를 모두 입력해주세요.');
-  }
-});
-
 // 루틴 불러오기
 let list = JSON.parse(localStorage.getItem('routines')) || [];
 
@@ -65,8 +52,8 @@ function render() {
   update();
 }
 
-// 루틴 추가
-function add() {
+// 루틴 추가 함수
+function addRoutine() {
   const text = input.value.trim();
   if (!text) return;
   list.push({ text, checked: false });
