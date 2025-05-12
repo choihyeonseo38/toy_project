@@ -1,0 +1,117 @@
+/* MyProfile.css - Scoped CSS */
+
+/* 전체 페이지 배경 및 폰트 설정 */
+.profile-body {
+    font-family: 'Pretendard', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #d9e4f5);
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* 컨테이너 중앙 정렬 */
+  .profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  /* 제목 스타일 */
+  .profile-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #4f46e5;
+  }
+  
+  /* 프로필 이미지 섹션 */
+  .profile-image-section {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* 프로필 이미지 스타일 */
+  .profile-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    border: 4px solid #4f46e5;
+  }
+  
+  /* 프로필 정보 카드 */
+  .profile-info {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* 라벨 텍스트 */
+  .profile-info label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+    color: #555;
+  }
+  
+  /* 입력 필드 스타일 */
+  .profile-input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .profile-input:focus {
+    border-color: #a5b4fc;
+    box-shadow: 0 0 0 3px rgba(164, 180, 252, 0.3);
+    outline: none;
+  }
+  
+  /* 일반 텍스트 정보 */
+  .profile-info p {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  /* 버튼 스타일 */
+  .profile-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #6d28d9, #4f46e5);
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(79, 70, 229, 0.4);
+    transition: transform 0.2s, opacity 0.3s;
+  }
+  
+  .profile-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  /* 모바일 대응 */
+  @media (max-width: 500px) {
+    .profile-info {
+      padding: 20px;
+    }
+  
+    .profile-image {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

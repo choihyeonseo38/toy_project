@@ -1,0 +1,225 @@
+/* 구글 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;800&display=swap');
+
+/* 전체 페이지 스타일 */
+.activity-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Pretendard', sans-serif;
+
+  /* 파스텔 그라데이션 배경 */
+  background: linear-gradient(135deg, #ffd6ec, #d6f0ff, #e2d6ff);
+}
+
+/* 상단 네비게이션 */
+.activity-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #9d4edd; /* 보라 계열 포인트 색상 */
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #4b4b4b;
+  transition: color 0.3s;
+}
+
+.nav-menu li a:hover {
+  color: #ff66b3; /* 핑크 계열 하이라이트 */
+}
+
+/* 검색 영역 */
+.search-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  gap: 20px;
+}
+
+select {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  width: 180px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff90c2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff66b3;
+}
+
+button.selected {
+  background-color: #4caf50;
+}
+
+button.selected:hover {
+  background-color: #357a38;
+}
+
+.gender-buttons button {
+  padding: 12px 25px;
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+.gender-buttons button.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+/* 활동 글 목록 */
+.posts-section {
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.posts-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+strong {
+  font-size: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #777;
+}
+
+/* 글 삭제 및 쪽지 보내기 버튼 */
+.delete-button,
+.message-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-button:hover {
+  background-color: #45a049;
+}
+
+.message-button {
+  background-color: #2196f3;
+}
+
+.message-button:hover {
+  background-color: #1976d2;
+}
+
+/* 글쓰기 */
+.post-create-section {
+  text-align: center;
+  margin-top: 30px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.write-button {
+  padding: 12px 25px;
+  background-color: #ff90c2;
+  color: white;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.write-button:hover {
+  background-color: #ff66b3;
+}
+
+.post-form input,
+.post-form select,
+.post-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-button {
+  padding: 12px 25px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
